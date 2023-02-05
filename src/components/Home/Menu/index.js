@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
 import { CgSearch } from "react-icons/cg";
+import { menuItems } from './data';
 
 const Menu = () => {
   return (
+    <>
     <div className='main-container'>
       <div className='container-content'>
         <div className='container-text'>
@@ -42,6 +44,15 @@ const Menu = () => {
         </div>
       </div>
     </div>
+
+        <nav>
+          <ul>
+            {menuItems.map(({label, id}) => {
+              <li key={id}>{label}</li>
+            })}
+          </ul>
+        </nav>
+  </>
   )
 }
 
