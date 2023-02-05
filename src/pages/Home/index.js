@@ -5,6 +5,7 @@ import Footer from '../../components/Home/Footer'
 import Loader from '../../components/common/Loader'
 import EmptyViewComponent from '../../components/common/EmptyView'
 import ResultList from '../../components/Home/ResultsList'
+import MenuItemsList from '../../components/Home/MenuItems'
 
 
 const Home = () => {
@@ -14,6 +15,11 @@ const Home = () => {
 
     {/* menu */}
     <Menu />
+
+
+    {/* people also seacrh for */}
+    <MenuItemsList />
+
 
     {/* Loader */}
     <Loader />

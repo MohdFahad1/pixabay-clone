@@ -15,7 +15,7 @@ const Footer = () => {
           <FaInstagram className='icon' />
           <FaPinterest className='icon' />
           <FaTwitter className='icon' />
-          <FaFacebook className='icon' />
+          <FaFacebook className='icon'/>
         </div>
       </div>
       <div className='footer-links'>
