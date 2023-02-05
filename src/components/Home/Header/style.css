@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    height: 4rem;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    z-index: 100;
+}
+
+.header-logo{
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+
+.login-btn{
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #fff;
+    color: #8e8e8e;
+    margin-right:1.5rem;
+    padding:1rem;
+    font-size: 1rem;
+    font-weight:400;
+    height: 2.8rem;
+    width: 200%;
+    border-radius:25px;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    background-color: #EEEEEE;
+}
+
+.join-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #838383;
+    background-color: #fff;
+    margin-right:1.5rem;
+    padding:1rem;
+    font-size: 1rem;
+    font-weight:400;
+    height: 2.8rem;
+    width: 100%;
+    border-radius:25px;
+    cursor: pointer;
+}
+
+.join-btn:hover{
+    border:1px solid #000;
+}
+
+.upload-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 1rem;
+    font-weight: 550;
+    height: 2.8rem;
+    width: 100%;
+    border-radius:25px;
+    border:none;
+    background-color: #00AB6B;
+    color: #fff;
+    margin-right:1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.upload-btn:hover{
+    opacity: .8;
+}
+
+.upload-icon{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
