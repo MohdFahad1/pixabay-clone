@@ -1,8 +1,9 @@
 import React from 'react'
-
+import LottieAnimation from '../LottieAnimations'
+import { lottieLoader } from '../LottieAnimations/lottieData'
 const Loader = () => {
   return (
-    <h1>Loader</h1>
+    <LottieAnimation file={lottieLoader} width='300px' height='300px'/>
   )
 }
 

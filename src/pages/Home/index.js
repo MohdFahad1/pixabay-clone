@@ -3,7 +3,7 @@ import Header from '../../components/Home/Header'
 import Menu from '../../components/Home/Menu'
 import Footer from '../../components/Home/Footer'
 import Loader from '../../components/common/Loader'
-import EmptyViewComponent from '../../components/common/EmptyView'
+import EmptyViewComponent from '../../components/common/EmptyListComponent'
 import ResultList from '../../components/Home/ResultsList'
 import MenuItemsList from '../../components/Home/MenuItems'
 
