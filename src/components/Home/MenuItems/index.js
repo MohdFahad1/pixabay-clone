@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css';
 import { menuItems } from './data';
-const MenuItemsList = () => {
+const MenuItemsList = ({handleMenuItemClicked}) => {
     return (
         <nav>
         <h1>People also search for: </h1>
         <ul>
           {menuItems.map(({ label, id }) => (
-            <li key={id} id={label} >
+            <li key={id} id={label} onClick={handleMenuItemClicked} >
               {label}
             </li>
           ))}
