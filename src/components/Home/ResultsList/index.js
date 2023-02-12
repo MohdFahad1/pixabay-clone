@@ -2,11 +2,14 @@ import React from 'react'
 import './style.css';
 
 const ResultList = ({ images }) => (
-    <div className='resultList-container'>
-      {images.map(image => {
-        <img key={image.id} src={image.userImageURL} alt="img" />
-        {/* <h1>{image.id}, </h1> */}
-      })}
-    </div>)
+  <div className='resultList-container'>
+    {images.map(image => (
+      <div className='images-container'>
+      <img key={image.id} src={image.largeImageURL} alt="img" />
+      {/* <div>{image.comments} {image.likes} {image.downloads} {image.views}</div> */}
+      </div>
+    ))}
+  </div>
+);
 
 export default ResultList

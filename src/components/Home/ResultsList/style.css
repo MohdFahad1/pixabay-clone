@@ -7,9 +7,11 @@
   .resultList-container img {
     width: 100%;
     height: 100%;
+    margin: 1rem;
     object-fit: cover;
   }
-  
+
+
   /* MEDIA QUERIES */
   @media (max-width: 576px) {
     .resultList-container {

@@ -24,7 +24,7 @@ export const menuItems = [
       id: 6,
     },
     {
-      label: 'Hip & Healthy',
+      label: 'fit & Healthy',
       id: 7,
     },
     {

@@ -15,7 +15,8 @@ const Menu = ({handleFormSubmit, handleInputChange, searchInputValue}) => {
           }>
             <input className='search-bar'
             value={searchInputValue}
-              type="search"
+              type="text"
+              required
               placeholder="Search for all images on pixabay" autoComplete='off'
               onChange={handleInputChange}
             />
@@ -23,12 +24,6 @@ const Menu = ({handleFormSubmit, handleInputChange, searchInputValue}) => {
               <CgSearch />
             </button>
             </form>
-        </div>
-
-
-
-        <div className='popular-searches'>
-          <span>Popular: </span>
         </div>
       </div>
     </div>

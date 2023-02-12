@@ -12,10 +12,9 @@ const Home = () => {
 
   const [showMenu, setShowMenu] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [searchInput, setSearchInput] = useState("");
-  const [searchResultsCount, setSearchResultsCount] = useState(20);
   const [imageList, setImageList] = useState([]);
-  // const [addImages, setAddImages] = useState([]);
+  const [searchInput, setSearchInput] = useState('');
+  const [searchResultsCount, setSearchResultsCount] = useState(50);
 
 
   const searchResults = async (search) => {
@@ -26,29 +25,10 @@ const Home = () => {
     setShowMenu(false);
     axios.get(API).then((res)=>{
       setImageList(res.data.hits);
-      console.log(res.data.hits);
-      console.log(imageList);
+      // console.log(res.data.hits);
+      // console.log(imageList);
       setLoading(false);
     }).catch((err) => console.log(err));
-
-
-    // axios.get(API)
-    // .then((response) => {
-    //   // setImageList(response.data.hits);
-    //   setAddImages(response.data.hits);
-    //   console.log(response.data.hits);
-    //   console.log("My Images", addImages)
-    //   setLoading(false);
-    // })
-    // .catch(error => console.log(`Error: ${error}`));
-
-
-    // const response = await fetch(`${pixabayAPI.url}?key=${pixabayAPI.key}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true`);
-    // const data = await response.json();
-    // console.log(data?.hits);
-    // setImageList(data?.hits);
-    // console.log(imageList)
-    // setLoading(false);
 }
 
 const handleFormSubmit = (e) => {
@@ -90,7 +70,7 @@ return (
 
 
 
-      {/* ImageList */}
+      {/* Empty List View */}
       {!showMenu && !loading && !imageList.length ? (<EmptyViewComponent />) : null}
 
 

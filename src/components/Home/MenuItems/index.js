@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.css';
 import { menuItems } from './data';
-const MenuItemsList = ({handleMenuItemClicked}) => {
-    return (
+const MenuItemsList = ({handleMenuItemClicked}) => (
         <nav>
         <h1>People also search for: </h1>
         <ul>
@@ -13,7 +12,6 @@ const MenuItemsList = ({handleMenuItemClicked}) => {
           ))}
         </ul>
       </nav>
-    )
-}
+    );
 
-export default MenuItemsList
+export default MenuItemsList;
