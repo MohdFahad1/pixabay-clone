@@ -25,8 +25,6 @@ const Home = () => {
     setShowMenu(false);
     axios.get(API).then((res)=>{
       setImageList(res.data.hits);
-      // console.log(res.data.hits);
-      // console.log(imageList);
       setLoading(false);
     }).catch((err) => console.log(err));
 }
@@ -75,7 +73,7 @@ return (
 
 
       {/* result List */}
-      {!showMenu && !loading && imageList.length ? (<ResultList images={imageList} />) : null}
+      {!showMenu && !loading && imageList.length ? (<ResultList images={imageList} searchInputValue={searchInput} />) : null}
     </main>
 
 
