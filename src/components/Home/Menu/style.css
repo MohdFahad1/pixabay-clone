@@ -65,3 +65,9 @@
 .popular-searches span{
     font-weight: 500;
 }
+
+@media screen and (max-width:480px){
+    .main-container{
+        padding: 0 0.8rem;
+    }
+}

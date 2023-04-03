@@ -10,11 +10,11 @@ nav{
 }
 
 nav h1{
-    margin-top:1.5rem;
+    margin-top:4.5rem;
 }
 
 nav ul{
-    margin:0 10rem 0 10rem;
+    margin:0 5rem;
 }
 
 nav ul li{
@@ -46,9 +46,9 @@ nav ul li:hover::after{
 @media screen and (max-width:576px)
 {
     nav{
+        display: contents;
         position: absolute;
         top: 45rem;
-        height: 100vh;
     }
 
     nav ul{

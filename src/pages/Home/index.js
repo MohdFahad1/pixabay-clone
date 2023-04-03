@@ -37,7 +37,6 @@ const handleFormSubmit = (e) => {
 const handleHomeClick = () => {
   setSearchInput('');
   setImageList([]);
-  // setAddImages([]);
   setShowMenu(true);
 }
 

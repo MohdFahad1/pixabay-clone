@@ -13,9 +13,6 @@ const ResultList = ({ images, searchInputValue }) => (
         <div className='images-icons'>
         <span><CgHeart />{image.likes}</span> <span><FaRegComment />{image.comments}</span> <span><FaRegEye />{image.views}</span> <span><FaArrowDown />{image.downloads}</span>
         </div>
-        {/* <div className='images-likes'>
-          <span>{image.likes}</span> <span>{image.comments}</span> <span>{image.views}</span> <span>{image.downloads}</span>
-        </div> */}
       </div>
     ))}
   </div>
