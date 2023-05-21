@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Pixabay Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About
 
-## Available Scripts
+This is a README file for the Pixabay Clone, a web application built with React. The Pixabay Clone is inspired by the popular image sharing platform, 
+Pixabay, and allows users to search and discover a wide variety of high-quality images.
 
-In the project directory, you can run:
+![Screenshot 2023-05-21 221446](https://github.com/MohdFahad1/pixabay-clone/assets/98938137/eb62ca95-89a2-4053-b556-7c05ae20a5ac)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 2023-05-21 221519](https://github.com/MohdFahad1/pixabay-clone/assets/98938137/7cc89ac5-119c-4e4a-a1ff-6ab53f4cb6c8)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+![Screenshot 2023-05-21 221557](https://github.com/MohdFahad1/pixabay-clone/assets/98938137/a9a9f838-ba65-43b1-9d6f-340132e9310f)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Features
+• Image Search: Users can enter a search term and browse through a collection of images related to their search query.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• Utilized the Pixabay API to fetch and display a wide range of high-quality images.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+• Image Preview: Clicking on an image will display a larger preview of the selected image (modal), providing more details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• Responsive Design: The application is designed to be responsive and provide an optimal viewing experience across various devices and screen sizes.
 
-### `npm run eject`
+# Live Demo
+This project is hosted on Netlify.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  [Demo Link](https://react-pixabay-clone.netlify.app/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Tools & Tech Used
+- Visual Studio Code
+- React JS
+- Javascript
+- CSS
