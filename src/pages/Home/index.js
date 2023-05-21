@@ -6,7 +6,6 @@ import Loader from '../../components/common/Loader'
 import EmptyViewComponent from '../../components/common/EmptyListComponent'
 import ResultList from '../../components/Home/ResultsList'
 import MenuItemsList from '../../components/Home/MenuItems'
-import { pixabayAPI } from '../../config/data'
 import axios from 'axios';
 const Home = () => {
 
@@ -21,7 +20,7 @@ const Home = () => {
 
   const searchResults = async (search) => {
 
-    const API = `${pixabayAPI.url}?key=${pixabayAPI.key}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true&per_page=${searchResultsCount}`; 
+    const API = `${process.env.REACT_APP_API_URL}?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true&per_page=${searchResultsCount}`; 
     setIsLoading(true);
     setLoading(true);
     setShowMenu(false);
