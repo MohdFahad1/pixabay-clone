@@ -14,18 +14,22 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [imageList, setImageList] = useState([]);
   const [searchInput, setSearchInput] = useState('');
-  const [searchResultsCount, setSearchResultsCount] = useState(50);
+  const [searchResultsCount, setSearchResultsCount] = useState(21);
+  const [isLoading, setIsLoading] = useState(false);
+  const [totalResult, setTotalResult] = useState();
 
 
   const searchResults = async (search) => {
 
-    const API = `${pixabayAPI.url}?key=${pixabayAPI.key}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true`; 
-
+    const API = `${pixabayAPI.url}?key=${pixabayAPI.key}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true&per_page=${searchResultsCount}`; 
+    setIsLoading(true);
     setLoading(true);
     setShowMenu(false);
     axios.get(API).then((res)=>{
       setImageList(res.data.hits);
+      setTotalResult(res.data.totalHits);
       setLoading(false);
+      setIsLoading(false);
     }).catch((err) => console.log(err));
 }
 
@@ -72,7 +76,7 @@ return (
 
 
       {/* result List */}
-      {!showMenu && !loading && imageList.length ? (<ResultList images={imageList} searchInputValue={searchInput} />) : null}
+      {!showMenu && !loading && imageList.length  ? (totalResult && <ResultList images={imageList} searchInputValue={searchInput} searchResultsCount={searchResultsCount} setSearchResultsCount={setSearchResultsCount} isLoading={isLoading} totalResult={totalResult}/>) : null}
     </main>
 
 
